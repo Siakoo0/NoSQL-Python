@@ -1,0 +1,23 @@
+city;country;:LABEL;street;zip_code;:ID
+Pesaro e Urbino;Italy;Address;Incrocio Leopoldo, 5;35028;1
+Rovigo;Italy;Address;Viale Tresoldi, 0;80024;6
+Mantova;Italy;Address;Incrocio Scotto, 21;36057;11
+Lecce;Italy;Address;Incrocio Ernesto, 90 Piano 0;28043;16
+Enna;Italy;Address;Borgo Contrafatto, 44 Appartamento 44;50059;21
+Palermo;Italy;Address;Stretto Marcantonio, 84 Appartamento 2;50018;26
+Messina;Italy;Address;Viale Innocenti, 151;87010;31
+Alessandria;Italy;Address;Strada Fausto, 38 Piano 0;23029;36
+Parma;Italy;Address;Via Fattori, 73;70019;41
+Monza e della Brianza;Italy;Address;Incrocio Coppola, 7 Appartamento 92;00079;46
+Prato;Italy;Address;Stretto Severino, 7 Piano 0;09081;51
+Cosenza;Italy;Address;Borgo Alderano, 18 Appartamento 74;50134;56
+Messina;Italy;Address;Viale Borromeo, 53;63073;61
+Campobasso;Italy;Address;Vicolo Greca, 14 Piano 9;28856;66
+Ravenna;Italy;Address;Borgo Ortolani, 14;16011;71
+Reggio Calabria;Italy;Address;Vicolo Mariana, 28 Piano 2;66100;76
+Medio Campidano;Italy;Address;Strada Lombroso, 30 Appartamento 7;39037;81
+Ancona;Italy;Address;Piazza Barbarigo, 2;18014;86
+Verbano-Cusio-Ossola;Italy;Address;Incrocio Antonella, 3;00158;90
+Massa-Carrara;Italy;Address;Vicolo Daria, 38 Appartamento 51;07100;94
+Treviso;Italy;Address;Borgo Donatello, 2 Appartamento 8;84073;98
+Benevento;Italy;Address;Rotonda Mario, 94;35129;101

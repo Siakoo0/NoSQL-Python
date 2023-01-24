@@ -1,0 +1,46 @@
+city;country;:LABEL;street;zip_code;:ID
+Siena;Italy;Address;Incrocio Dolores, 4;85025;187
+Avellino;Italy;Address;Stretto Calbo, 829;16153;192
+Bergamo;Italy;Address;Incrocio Valier, 5;74018;197
+Frosinone;Italy;Address;Via Rocco, 90 Appartamento 59;41030;202
+Pordenone;Italy;Address;Borgo Rembrandt, 557 Appartamento 9;73053;207
+Treviso;Italy;Address;Canale Osvaldo, 9;65014;212
+Udine;Italy;Address;Rotonda Germana, 6 Appartamento 19;98135;217
+Bergamo;Italy;Address;Borgo Silvio, 7 Piano 9;30173;222
+Firenze;Italy;Address;Strada Colletti, 5 Piano 2;12041;227
+Macerata;Italy;Address;Incrocio Palazzo, 997;88838;232
+La Spezia;Italy;Address;Via Graziella, 83;25068;237
+Grosseto;Italy;Address;Piazza Castellitto, 351 Piano 5;98143;242
+Nuoro;Italy;Address;Piazza Scaduto, 74 Appartamento 2;63094;247
+Milano;Italy;Address;Stretto Gianni, 73;98165;252
+Parma;Italy;Address;Via Agnolo, 240 Piano 7;50142;257
+Monza e della Brianza;Italy;Address;Canale Gionata, 82 Appartamento 1;41027;262
+Bolzano;Italy;Address;Borgo Virginia, 763;89125;267
+Verona;Italy;Address;Borgo Luchino, 62;82038;272
+Pistoia;Italy;Address;Piazza Bernardo, 81 Piano 5;37011;277
+Varese;Italy;Address;Strada Tasso, 7;92027;282
+Ancona;Italy;Address;Vicolo Civaschi, 834;26033;287
+Macerata;Italy;Address;Via Achille, 560 Piano 8;84036;292
+Padova;Italy;Address;Canale Cattaneo, 969 Appartamento 50;07012;297
+Nuoro;Italy;Address;Piazza Luisa, 2;80039;302
+Cuneo;Italy;Address;Rotonda Lucrezia, 659;28833;307
+Rieti;Italy;Address;Incrocio Petrucci, 422 Appartamento 98;38018;312
+Lucca;Italy;Address;Vicolo Antonino, 8 Appartamento 7;09094;317
+Lecco;Italy;Address;Rotonda Bevilacqua, 166 Piano 9;42027;322
+Cagliari;Italy;Address;Via Mazzi, 12 Appartamento 29;13019;327
+Cagliari;Italy;Address;Strada Enzo, 855 Appartamento 9;83037;332
+Ogliastra;Italy;Address;Via Luna, 16;46039;337
+Rovigo;Italy;Address;Incrocio Coluccio, 85 Piano 4;82015;342
+Sondrio;Italy;Address;Canale Liliana, 340 Appartamento 7;22069;347
+Modena;Italy;Address;Canale Udinese, 76 Piano 3;60100;352
+Treviso;Italy;Address;Strada Badoglio, 2 Piano 0;24124;357
+Rovigo;Italy;Address;Vicolo Chigi, 3 Appartamento 21;63074;362
+Alessandria;Italy;Address;Incrocio Roman, 64;08012;366
+Perugia;Italy;Address;Strada Pompeo, 48;80019;370
+Matera;Italy;Address;Stretto Guido, 53;86032;374
+Isernia;Italy;Address;Rotonda Maria, 455;50039;378
+Genova;Italy;Address;Contrada Domenico, 94 Appartamento 7;01023;382
+Varese;Italy;Address;Rotonda Germana, 232 Piano 5;00018;385
+Trapani;Italy;Address;Strada Gaspare, 646;26812;388
+Vercelli;Italy;Address;Rotonda Gaspare, 68;50100;390
+Parma;Italy;Address;Vicolo Luna, 52 Piano 9;56029;392

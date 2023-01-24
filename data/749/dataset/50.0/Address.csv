@@ -1,0 +1,46 @@
+zip_code;city;:LABEL;street;:ID;country
+13011;Varese;Address;Contrada Angelica, 5;187;Italy
+10087;Foggia;Address;Stretto Donna, 36;192;Italy
+22070;Enna;Address;Canale Modigliani, 857;197;Italy
+90026;L'Aquila;Address;Stretto Soffici, 182;202;Italy
+24025;Pesaro e Urbino;Address;Contrada Caccioppoli, 310;207;Italy
+16162;Padova;Address;Rotonda Pasquale, 60 Piano 7;212;Italy
+40034;Bologna;Address;Strada Amadeo, 75 Appartamento 4;217;Italy
+13841;Enna;Address;Incrocio Maria, 0;222;Italy
+23806;Genova;Address;Borgo Trincavelli, 74;227;Italy
+93014;Agrigento;Address;Rotonda Lodovico, 30 Piano 0;232;Italy
+10073;Foggia;Address;Rotonda Bulzoni, 20 Piano 2;237;Italy
+17033;Pisa;Address;Borgo Borghese, 25;242;Italy
+53043;Grosseto;Address;Rotonda Marisa, 4;247;Italy
+74012;Trento;Address;Stretto Santino, 36;252;Italy
+04013;Milano;Address;Canale Gioachino, 936;257;Italy
+59016;Aosta;Address;Vicolo Tartini, 98;262;Italy
+20005;Monza e della Brianza;Address;Rotonda Goldstein, 2 Appartamento 89;267;Italy
+17051;Macerata;Address;Via Isabella, 143;272;Italy
+63828;Firenze;Address;Piazza Petrassi, 14;277;Italy
+12070;Vibo Valentia;Address;Canale Malaparte, 49 Appartamento 7;282;Italy
+07043;Latina;Address;Viale Claudia, 440;287;Italy
+30174;Livorno;Address;Vicolo Fabio, 580 Piano 7;292;Italy
+57028;Imperia;Address;Piazza Tatiana, 3 Appartamento 71;297;Italy
+28061;Imperia;Address;Canale Rizzo, 17 Appartamento 6;302;Italy
+89132;Ogliastra;Address;Strada Lolita, 52;307;Italy
+80129;Biella;Address;Contrada Alessandro, 5;312;Italy
+73041;Vicenza;Address;Canale Lamberto, 89 Piano 5;317;Italy
+33049;Lucca;Address;Incrocio Novaro, 55 Piano 1;322;Italy
+89056;Monza e della Brianza;Address;Rotonda Vanessa, 2;327;Italy
+10044;Livorno;Address;Viale Antonella, 595;332;Italy
+20017;Ascoli Piceno;Address;Borgo Fernanda, 76;337;Italy
+30174;Como;Address;Stretto Celentano, 872;342;Italy
+12076;Prato;Address;Vicolo Serlupi, 2 Appartamento 66;347;Italy
+67055;L'Aquila;Address;Stretto Ermenegildo, 9;352;Italy
+80013;Medio Campidano;Address;Incrocio Aurora, 29;357;Italy
+80058;Sondrio;Address;Strada Norbiato, 669 Appartamento 55;362;Italy
+61012;Medio Campidano;Address;Stretto Toninelli, 25 Piano 1;366;Italy
+16042;Teramo;Address;Canale Salvi, 239 Appartamento 50;370;Italy
+34072;Bari;Address;Strada Maurilio, 3 Appartamento 79;374;Italy
+37010;Messina;Address;Incrocio Gianfrancesco, 1 Piano 6;378;Italy
+34014;Benevento;Address;Rotonda Carocci, 969 Appartamento 6;382;Italy
+26049;La Spezia;Address;Viale Ninetta, 437;385;Italy
+25029;Barletta-Andria-Trani;Address;Piazza Carolina, 0;388;Italy
+48027;Crotone;Address;Viale Manacorda, 65 Piano 1;390;Italy
+14058;Verona;Address;Contrada Loredana, 6 Appartamento 2;392;Italy

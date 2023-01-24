@@ -1,0 +1,91 @@
+:LABEL;country;:ID;city;street;zip_code
+Address;Italy;1121;Reggio Calabria;Canale Fiamma, 4 Appartamento 40;71017
+Address;Italy;1126;Matera;Incrocio Ferrucci, 74;16127
+Address;Italy;1131;Mantova;Via Taliani, 91 Piano 1;00138
+Address;Italy;1136;Parma;Borgo Paola, 6;20014
+Address;Italy;1141;Udine;Strada Ettore, 5 Piano 4;51035
+Address;Italy;1146;Macerata;Viale Pierina, 383 Piano 1;09039
+Address;Italy;1151;Grosseto;Stretto Poerio, 245;20016
+Address;Italy;1156;Bologna;Strada Alfredo, 9;06073
+Address;Italy;1161;Macerata;Piazza Dario, 83;28828
+Address;Italy;1166;Catanzaro;Borgo Marcella, 739 Piano 8;15010
+Address;Italy;1171;Ogliastra;Viale Etta, 79;26827
+Address;Italy;1176;Verona;Canale Pompeo, 460 Appartamento 7;27027
+Address;Italy;1181;Venezia;Strada Antonio, 344 Appartamento 30;14034
+Address;Italy;1186;Vicenza;Vicolo Sylvia, 3;25039
+Address;Italy;1191;Potenza;Via Anichini, 2 Appartamento 72;14033
+Address;Italy;1196;Bari;Via Capone, 880;00179
+Address;Italy;1201;Olbia-Tempio;Stretto Luciano, 97;03036
+Address;Italy;1206;Roma;Strada Lamberto, 9 Appartamento 1;38049
+Address;Italy;1211;Lucca;Via Argentero, 3 Piano 2;88070
+Address;Italy;1216;Genova;Strada Sommaruga, 55 Piano 9;23841
+Address;Italy;1221;Terni;Piazza Rembrandt, 5;20031
+Address;Italy;1226;Trieste;Vicolo Adamo, 1 Appartamento 30;39051
+Address;Italy;1231;Verbano-Cusio-Ossola;Incrocio Biagiotti, 82;34018
+Address;Italy;1236;Ascoli Piceno;Vicolo Berrè, 40;33030
+Address;Italy;1241;Benevento;Borgo Etta, 41;17010
+Address;Italy;1246;Viterbo;Stretto Giusti, 969;16155
+Address;Italy;1251;Cuneo;Strada Littizzetto, 82 Appartamento 97;47826
+Address;Italy;1256;Treviso;Incrocio Tiziana, 195;20022
+Address;Italy;1261;Lucca;Viale Sebastiano, 221 Piano 7;30123
+Address;Italy;1266;Firenze;Strada Alessandro, 56;27025
+Address;Italy;1271;Napoli;Stretto Azeglio, 961 Piano 0;28863
+Address;Italy;1276;Reggio Emilia;Borgo Impastato, 233 Appartamento 79;42020
+Address;Italy;1281;Siena;Vicolo Bonino, 682 Piano 2;66022
+Address;Italy;1286;Padova;Borgo Tonino, 965;14031
+Address;Italy;1291;Parma;Rotonda Gibilisco, 84 Piano 1;38086
+Address;Italy;1296;Imperia;Stretto Eraldo, 5;12049
+Address;Italy;1301;Ogliastra;Contrada Lucia, 429 Appartamento 4;23816
+Address;Italy;1306;Ascoli Piceno;Piazza Spinelli, 818;27024
+Address;Italy;1311;Pisa;Viale Leopoldo, 88;98035
+Address;Italy;1316;Ferrara;Canale Cassandra, 29;87067
+Address;Italy;1321;Savona;Rotonda Gianpietro, 6 Appartamento 9;23010
+Address;Italy;1326;Enna;Via Salvi, 80;39032
+Address;Italy;1331;Sassari;Incrocio Sermonti, 9;30038
+Address;Italy;1336;Isernia;Viale Antonietta, 113 Appartamento 64;25064
+Address;Italy;1341;Potenza;Borgo Martino, 130 Appartamento 67;02049
+Address;Italy;1346;Terni;Stretto Nadia, 14;80011
+Address;Italy;1351;La Spezia;Strada Pellegrini, 78 Piano 0;16147
+Address;Italy;1356;Reggio Calabria;Viale Luigi, 25;20836
+Address;Italy;1361;Rimini;Canale Comolli, 8;30033
+Address;Italy;1366;Vicenza;Strada Vito, 826;40123
+Address;Italy;1371;Trapani;Viale Castellitto, 2 Piano 1;88837
+Address;Italy;1376;Ogliastra;Viale Brunelleschi, 829;48018
+Address;Italy;1381;Caserta;Incrocio Barozzi, 63 Appartamento 20;17022
+Address;Italy;1386;Padova;Canale Vecoli, 29 Appartamento 1;88819
+Address;Italy;1391;Asti;Piazza Letizia, 2 Piano 9;15036
+Address;Italy;1396;Reggio Emilia;Viale Gaggini, 816;20091
+Address;Italy;1401;Salerno;Contrada Respighi, 52;63815
+Address;Italy;1406;Gorizia;Canale Zamorani, 11;17025
+Address;Italy;1411;Ogliastra;Canale Paganini, 73 Piano 8;86100
+Address;Italy;1416;Milano;Piazza Annunziata, 40 Appartamento 73;90151
+Address;Italy;1421;Ravenna;Borgo Monaco, 15;80044
+Address;Italy;1426;Terni;Strada Giacinto, 63;10137
+Address;Italy;1431;Lecce;Strada Adriana, 29 Piano 7;51018
+Address;Italy;1436;Salerno;Contrada Sollima, 70;84047
+Address;Italy;1441;Trapani;Borgo Mercantini, 2 Piano 6;80029
+Address;Italy;1446;Ogliastra;Via Barcella, 327;95024
+Address;Italy;1451;Napoli;Borgo Matteo, 89 Appartamento 58;24011
+Address;Italy;1456;Reggio Calabria;Viale Bellò, 89 Appartamento 0;28016
+Address;Italy;1461;Novara;Rotonda Ottavio, 14 Piano 4;21056
+Address;Italy;1466;Rieti;Canale Porzio, 4;24026
+Address;Italy;1471;Ascoli Piceno;Incrocio Fabia, 90 Appartamento 64;84016
+Address;Italy;1475;Cremona;Contrada Riccardo, 10 Piano 0;80126
+Address;Italy;1479;Agrigento;Rotonda Pietrangeli, 2 Appartamento 6;46028
+Address;Italy;1483;Grosseto;Contrada Pertini, 76;98066
+Address;Italy;1487;Lecco;Viale Gabriella, 3;13048
+Address;Italy;1491;Novara;Borgo Chindamo, 122;09088
+Address;Italy;1495;Oristano;Via Guarino, 317;87100
+Address;Italy;1499;Caserta;Via Benito, 5 Appartamento 7;34131
+Address;Italy;1503;Ascoli Piceno;Piazza Ferrari, 432;20028
+Address;Italy;1507;Forlì-Cesena;Via Sole, 33;10089
+Address;Italy;1511;Salerno;Viale Livia, 558;51030
+Address;Italy;1514;Parma;Viale Farnese, 7;85056
+Address;Italy;1517;Pisa;Strada Vincenzo, 93 Appartamento 56;70124
+Address;Italy;1520;Benevento;Piazza Tolentino, 96 Piano 0;16014
+Address;Italy;1523;Brindisi;Strada Lara, 3 Piano 7;03018
+Address;Italy;1526;Napoli;Incrocio Maderna, 37;00183
+Address;Italy;1528;Treviso;Incrocio Fusani, 775;35040
+Address;Italy;1530;Salerno;Viale Chittolini, 38;32027
+Address;Italy;1532;Matera;Canale Ricci, 2 Piano 4;28845
+Address;Italy;1534;Treviso;Stretto Milo, 6 Piano 4;17020

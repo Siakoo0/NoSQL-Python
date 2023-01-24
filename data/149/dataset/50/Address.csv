@@ -1,0 +1,10 @@
+:LABEL;country;city;zip_code;:ID;street
+Address;Italy;Roma;17014;36;Contrada Manzoni, 60
+Address;Italy;Ravenna;34014;41;Contrada Federico, 923
+Address;Italy;Gorizia;09128;46;Strada Ortese, 1
+Address;Italy;Rimini;06060;51;Via Guinizzelli, 26 Piano 1
+Address;Italy;Agrigento;10076;56;Rotonda Vittorio, 79
+Address;Italy;Forlì-Cesena;95131;61;Contrada Gabriele, 36
+Address;Italy;Cosenza;23026;66;Borgo Anita, 21
+Address;Italy;Teramo;54015;71;Via Vittorio, 377
+Address;Italy;Pesaro e Urbino;85044;75;Contrada Susanna, 55
