@@ -39,7 +39,6 @@ class ResultWriter:
         
         
     def save(self):
-        print(self.wb.worksheets)
         if "Sheet" in self.wb.get_sheet_names():
             del self.wb["Sheet"]
             

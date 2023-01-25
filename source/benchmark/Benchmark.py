@@ -8,7 +8,7 @@ class Benchmark:
         Database.clearCache()
         self.dimension = dimension
         self.databases = [
-            # MongoBench(dimension),
+            MongoBench(dimension),
             Neo4JBench(dimension)
         ]
         

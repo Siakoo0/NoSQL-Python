@@ -1,4 +1,4 @@
-open_date;:LABEL;:ID;closed_date;type
-2022-09-05T21:15:11.330201;Claim;9;2022-09-10T21:20:17.330201;Furto in Casa
-2022-02-02T21:15:34.330201;Claim;12;;Incendio doloso Auto
-2022-05-15T21:15:05.330201;Claim;15;;Incendio doloso Casa
+:ID;closed_date;type;open_date;:LABEL
+9;2022-12-22T23:15:09.571973;Incidente Auto;2022-12-17T23:08:41.571973;Claim
+12;;Furto in Casa;2022-04-16T23:05:55.572104;Claim
+15;;Incendio doloso Casa;2022-07-22T23:09:26.573292;Claim

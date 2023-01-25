@@ -1,7 +1,7 @@
-city;:LABEL;country;:ID;street;zip_code
-Macerata;Address;Italy;52;Contrada Ansaldo, 84 Appartamento 4;23877
-Reggio Emilia;Address;Italy;57;Strada Gioachino, 350;17013
-Verona;Address;Italy;62;Canale Sebastiano, 85 Piano 6;24036
-Avellino;Address;Italy;67;Via Tomei, 259 Appartamento 6;22078
-Rieti;Address;Italy;72;Borgo Pierangelo, 98;91016
-Bologna;Address;Italy;77;Via Adamo, 89 Piano 5;20006
+:ID;country;city;street;:LABEL;zip_code
+52;Italy;Livorno;Piazza Bellò, 7;Address;18015
+57;Italy;Vicenza;Strada Antonina, 467 Appartamento 62;Address;95041
+62;Italy;Savona;Piazza Gori, 236 Appartamento 8;Address;15051
+67;Italy;Roma;Via Luigina, 527;Address;72019
+72;Italy;Piacenza;Stretto Guinizzelli, 31;Address;14049
+77;Italy;Roma;Canale Vento, 2 Appartamento 42;Address;38028

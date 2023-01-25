@@ -1,3 +1,3 @@
-city;:LABEL;country;:ID;street;zip_code
-Biella;Address;Italy;1;Strada Gadda, 89 Piano 7;33077
-Reggio Calabria;Address;Italy;6;Vicolo Pellico, 0;16021
+:ID;country;city;street;:LABEL;zip_code
+1;Italy;Forlì-Cesena;Viale Morena, 944 Appartamento 94;Address;61042
+6;Italy;Siena;Borgo Giulia, 4;Address;23815

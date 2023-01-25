@@ -1,3 +1,3 @@
-last_name;:LABEL;:ID;full_name;first_name
-Bova;Customer;0;Claudio Bova;Claudio
-Malenchini;Customer;5;Amanda Malenchini;Amanda
+:ID;full_name;first_name;:LABEL;last_name
+0;Giada Tamburini;Giada;Customer;Tamburini
+5;Armando Fantozzi;Armando;Customer;Fantozzi

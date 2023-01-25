@@ -22,6 +22,8 @@ class Neo4JBench:
         dateEnd = datetime.now() + timedelta(days=15)
         dateEnd = dateEnd.strftime(formatDate)
 
+        Neo4J.clearCache()
+
         
         queries = [
             self.firstQuery(), 
@@ -35,7 +37,7 @@ class Neo4JBench:
 
             for query in queries:
                 startTime = cronometer()                
-                Neo4J.executeQuery(query, True)
+                Neo4J.executeQuery(query, False)
                 endTime = cronometer() - startTime
                 
                 resultRow.append(endTime)
