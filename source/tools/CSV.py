@@ -19,7 +19,7 @@ class CSV:
             rowsToWrite[headerSet].append(row) 
         
         for indexFile, headers in enumerate(rowsToWrite.keys()):
-            filename = path + self.name if indexFile == 0 else path + self.name + "_" + str(indexFile)
+            filename = path + self.name if indexFile == 0 else path + self.name + "@" + str(indexFile)
             with open(filename + ".csv", 'w', newline='') as file:
                 writer = csv.DictWriter(file, list(headers), delimiter=";")
                 writer.writeheader()

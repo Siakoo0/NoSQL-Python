@@ -80,25 +80,25 @@ def generateCustomers(generator) -> None:
     
     generator.entities["customers"] = []
     
-    for customerIndex in range(generator.get("customers")):
-        address = extract(customerData["addresses"], customerIndex)
-        phone = extract(customerData["phones"], customerIndex)
-        email = extract(customerData["emails"], customerIndex)
-        ssn = extract(customerData["SSNs"], customerIndex)
-        
-        relations = {
-            "HAS_ADDRESS" : address,
-            "HAS_EMAIL" : email,
-            "HAS_PHONE" : phone,
-            "HAS_SSN" : ssn,
-        }
-        
+    for customerIndex in range(generator.get("customers")):        
         with ThreadPoolExecutor(10) as pool:
-            pool.submit(createCustomer, generator.entities["customers"], generator.fake, relations)
+            pool.submit(createCustomer, generator.entities["customers"], generator.fake, customerData, customerIndex)
     
     Logger.log(f"[ Dimensione: {generator.getTotal()} - Percentuale {generator.getPercentage()}% ] Caricamento Customers completato.")
     
-def createCustomer(arrayList: list, fake, relations : dict) -> None:
+def createCustomer(arrayList: list, fake, customerData : dict, customerIndex) -> None:
+    address = extract(customerData["addresses"], customerIndex)
+    phone = extract(customerData["phones"], customerIndex)
+    email = extract(customerData["emails"], customerIndex)
+    ssn = extract(customerData["SSNs"], customerIndex)
+    
+    relations = {
+        "HAS_ADDRESS" : address,
+        "HAS_EMAIL" : email,
+        "HAS_PHONE" : phone,
+        "HAS_SSN" : ssn,
+    }
+    
     fsName = fake.first_name()
     lsName = fake.last_name()
     

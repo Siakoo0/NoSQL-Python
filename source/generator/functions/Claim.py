@@ -9,7 +9,17 @@ from source.tools.Logger import Logger
 from datetime import datetime, timedelta
 from random import choice, randint
 
-def createClaim(arrayList, relations):
+def createClaim(arrayList, relations, indexClaim):
+    customer = extract(relations["customers"], indexClaim)
+    evaluator = extract(relations["evaluators"], indexClaim)
+    lawyer = extract(relations["lawyers"], indexClaim)
+    
+    relationships = {
+        "OPEN" : customer,
+        "CHECKS" : evaluator,
+        "DEALS_WITH" : lawyer
+    }
+    
     insuranceTypes = ["Furto in Casa", "Furto Auto", "Incendio doloso Auto", "Incendio doloso Casa", "Incidente Auto"]
     dStart = datetime.now() - timedelta(days=randint(1, 365), minutes=randint(5, 10), seconds=randint(1, 59))
 
@@ -17,7 +27,7 @@ def createClaim(arrayList, relations):
     
     claim = Claim(choice(insuranceTypes), dStart, dEnd if choice([True, False]) else "")
     
-    for relation, entity in relations.items():
+    for relation, entity in relationships.items():
         claim.link(relation, entity)
     
     arrayList.append(claim)
@@ -40,17 +50,7 @@ def generateClaims(generator):
     
     with ThreadPoolExecutor(10) as pool:
         for indexClaim in range(generator.get("claims")):
-            customer = extract(claimsData["customers"], indexClaim)
-            evaluator = extract(claimsData["evaluators"], indexClaim)
-            lawyer = extract(claimsData["lawyers"], indexClaim)
-            
-            relationships = {
-                "OPEN" : customer,
-                "CHECKS" : evaluator,
-                "DEALS_WITH" : lawyer
-            }
-            
-            pool.submit(createClaim, generator.entities["claims"], relationships)
+            pool.submit(createClaim, generator.entities["claims"], claimsData, indexClaim)
     
     Logger.log(f"[ Dimensione: {generator.getTotal()} - Percentuale {generator.getPercentage()}% ] Caricamento Claims completato.")
 

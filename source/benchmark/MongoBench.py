@@ -52,7 +52,7 @@ class MongoBench:
         
         return cronometer() - start
 
-    def thirdQuery(self):
+    def fourthQuery(self):
         dateStart = datetime.now() - timedelta(days=15)
         dateEnd = datetime.now() + timedelta(days=15)
         
@@ -83,7 +83,7 @@ class MongoBench:
 
         return cronometer() - start
 
-    def fourthQuery(self):
+    def thirdQuery(self):
         start = cronometer()
 
         res = self.db.customers.aggregate(
@@ -120,7 +120,7 @@ class MongoBench:
                     "$group": {"_id": "$customers", "repeatedField": {"$push": "$$ROOT"}}
                 },
                 {
-                 "$project" : {"_id": 0, "customers": "$_id", "repeatedField" : "$repeatedField._id"}
+                    "$project" : {"_id": 0, "customers": "$_id", "repeatedField" : "$repeatedField._id"}
                 },
                 {
                     "$unwind" : "$repeatedField"

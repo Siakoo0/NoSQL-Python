@@ -25,9 +25,16 @@ class Neo4JWriter:
     def convert(entity : Entity):
         attributes = entity.getAttributes()
         
+        dateTimeChg = []
+        
         for name, attribute in attributes.items():
             if isinstance(attribute, datetime):
                 attributes[name] = attribute.strftime('%Y-%m-%dT%H:%M:%S.%f%Z')
+                dateTimeChg.append(name)
+        
+        for name in dateTimeChg:
+            attributes[name + ":datetime"] = attributes[name]
+            del attributes[name]
         
         uniqueID = Neo4JWriter.getUniqueID()
         
@@ -121,9 +128,9 @@ class Neo4JWriter:
         
         for filename in os.listdir("../.neo4j/import"):
             if "_" in filename:
-                relationships.append(f"--relationships  /import/{filename}.csv ")
+                relationships.append(f"--relationships  /import/{filename} ")
             else:
-                nodes.append(f"--nodes /import/{filename}.csv ")
+                nodes.append(f"--nodes /import/{filename} ")
                 
                 
         relationships = " ".join(relationships)
@@ -131,15 +138,32 @@ class Neo4JWriter:
         
         commands = [
             "neo4j stop",
-            f"neo4j-admin database import full --delimiter=\";\" --array-delimiter=\"|\" --overwrite-destination {nodes} {relationships}",
+            f"neo4j-admin database import full --delimiter=\";\" --array-delimiter=\"|\" --overwrite-destination  --skip-duplicate-nodes {nodes} {relationships}",
             "neo4j start"
         ]
-        
-        print(commands)
         
         for command in commands:
             container.exec_run(command)
             
-        sleep(10)
+        sleep(20)
         
         Neo4J.resetConnection()
+        
+
+# neo4j-admin database import full --delimiter=";" --array-delimiter="|" --overwrite-destination \
+# --nodes /import/Address.csv  \
+# --nodes /import/Claim$1.csv  \
+# --nodes /import/Claim.csv \
+# --nodes /import/Customer.csv  \
+# --nodes /import/Email.csv \
+# --nodes /import/Evaluator.csv  \
+# --nodes /import/Lawyer.csv  \
+# --nodes /import/Phone.csv  \
+# --nodes /import/SSN.csv  \
+# --relationships  /import/Claim_Customer.csv  \
+# --relationships  /import/Claim_Evaluator.csv  \
+# --relationships  /import/Claim_Lawyer.csv  \
+# --relationships  /import/Customer_Address.csv  \
+# --relationships  /import/Customer_Email.csv  \
+# --relationships  /import/Customer_Phone.csv \
+# --relationships  /import/Customer_SSN.csv

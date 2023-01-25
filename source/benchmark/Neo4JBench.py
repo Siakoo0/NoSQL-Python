@@ -65,10 +65,10 @@ class Neo4JBench:
     def fourthQuery(self, dateStart, dateEnd):
         return f"""MATCH (c:Customer)-[:OPEN]-(claim:Claim)
                    MATCH (claim)-[:DEALS_WITH]-(l:Lawyer)
-                   MATCH (claim)-[:CHECK]-(e:Evaluator)
+                   MATCH (claim)-[:CHECKS]-(e:Evaluator)
                    WHERE claim.closed_date IS NULL AND 
-                   DATETIME(claim.open_date) > DATETIME('{dateStart}') 
-                   AND DATETIME(claim.open_date) < DATETIME('{dateEnd}')
+                   claim.open_date > DATETIME('{dateStart}') 
+                   AND claim.open_date < DATETIME('{dateEnd}')
                    RETURN *"""
                   
     def save(self):
