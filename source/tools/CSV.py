@@ -5,23 +5,24 @@ class CSV:
     def __init__(self, name):
         self.reader = None
         self.writer = None
-        self.name = name + ".csv"
+        self.name = name
 
     def write(self, path, rows):
         Path(path).mkdir(parents=True, exist_ok=True, mode=0o777)
         
-        headers = {}
+        rowsToWrite = {}
         
         for row in rows:
-            headers = headers | row.keys()
+            headerSet = tuple(row.keys())
+            if not headerSet in rowsToWrite:
+                rowsToWrite[headerSet] = []
+            rowsToWrite[headerSet].append(row) 
         
-        with open(path + self.name, 'w', newline='') as file:
-            writer = csv.DictWriter(file, headers, delimiter=";")
-            writer.writeheader()
-            for row in rows:
-                writer.writerow(row)
-
-    def read(self):
-        with open(self.name, 'r') as file:
-            reader = csv.DictReader(file)
-            return reader
+        for indexFile, headers in enumerate(rowsToWrite.keys()):
+            filename = path + self.name if indexFile == 0 else path + self.name + "_" + str(indexFile)
+            with open(filename + ".csv", 'w', newline='') as file:
+                writer = csv.DictWriter(file, list(headers), delimiter=";")
+                writer.writeheader()
+                for row in rowsToWrite[headers]:
+                    writer.writerow(row)
+        

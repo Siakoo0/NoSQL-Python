@@ -7,6 +7,8 @@ from source.database.Neo4J import Neo4J
 
 from concurrent.futures import ThreadPoolExecutor
 from time import sleep
+import os
+
 
 import docker
 
@@ -38,22 +40,16 @@ class Neo4JWriter:
         CSV(name).write(path, data)
     
     @staticmethod
-    def writeRelations(relationships, paths, fileNames : list):
+    def writeRelations(relationships, paths):
         with ThreadPoolExecutor(10) as pool:
-            for _, relationship in relationships.items():
-                if not "_".join(relationship["nodes"]) in fileNames:
-                    fileNames.append("_".join(relationship["nodes"]))
-                    
+            for _, relationship in relationships.items():                    
                 for path in paths:
                     pool.submit(Neo4JWriter.writeCSV, "_".join(relationship["nodes"]), path, relationship["content"])
 
     @staticmethod
-    def writeEntities(entities, paths, fileNames):
+    def writeEntities(entities, paths):
         with ThreadPoolExecutor(10) as pool:
             for entityName, entitiesList in entities.items():
-                if not "_".join(entityName) in fileNames:
-                    fileNames.append(entityName)
-                    
                 for path in paths:
                     pool.submit(Neo4JWriter.writeCSV, entityName, path, entitiesList)
 
@@ -106,26 +102,35 @@ class Neo4JWriter:
             f"data/{dimension}/dataset/{percentage}/"
         ]
         
-        entitiesFilenames = []
-        relationsFilenames = []
-        
         with ThreadPoolExecutor(2) as pool:
-            pool.submit(Neo4JWriter.writeEntities, entities, paths, entitiesFilenames)
-            pool.submit(Neo4JWriter.writeRelations, relationships, paths, relationsFilenames)
+            pool.submit(Neo4JWriter.writeEntities, entities, paths)
+            pool.submit(Neo4JWriter.writeRelations, relationships, paths)
             
-        Neo4JWriter.load(entitiesFilenames, relationsFilenames)
+        Neo4JWriter.load()
         
         Logger.log(f"[ Dataset {dimension} ~ Neo4J Database] Caricamento dati perc. {percentage}% effettuato con successo.")
         
         
     @staticmethod    
-    def load(entitiesFilenames, relationsFilenames):
+    def load():
         client = docker.from_env()
         container = client.containers.get("neo4j_new")
         
-        relationships = " ".join([f"--relationships  /import/{filename}.csv " for filename in relationsFilenames])
+        relationships = []
+        nodes = []
         
-        nodes = " ".join([f"--nodes /import/{filename}.csv " for filename in entitiesFilenames])
+        for filename in os.listdir("../.neo4j/import"):
+            if "_" in filename:
+                relationships.append(f"--relationships  /import/{filename}.csv ")
+            else:
+                nodes.append(f"--nodes /import/{filename}.csv ")
+                
+                
+        relationships = " ".join(relationships)
+        nodes = " ".join(nodes)
+        # relationships = " ".join([f"--relationships  /import/{filename}.csv " for filename in os.listdir("../")])
+        
+        # nodes = " ".join([f"--nodes /import/{filename}.csv " for filename in entitiesFilenames])
         
         commands = [
             "neo4j stop",
@@ -133,8 +138,9 @@ class Neo4JWriter:
             "neo4j start"
         ]
         
-        for command in commands:
-            container.exec_run(command)
+        
+        # for command in commands:
+        #     container.exec_run(command)
             
         sleep(10)
         
