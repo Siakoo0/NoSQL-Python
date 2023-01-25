@@ -128,9 +128,6 @@ class Neo4JWriter:
                 
         relationships = " ".join(relationships)
         nodes = " ".join(nodes)
-        # relationships = " ".join([f"--relationships  /import/{filename}.csv " for filename in os.listdir("../")])
-        
-        # nodes = " ".join([f"--nodes /import/{filename}.csv " for filename in entitiesFilenames])
         
         commands = [
             "neo4j stop",
@@ -138,9 +135,10 @@ class Neo4JWriter:
             "neo4j start"
         ]
         
+        print(commands)
         
-        # for command in commands:
-        #     container.exec_run(command)
+        for command in commands:
+            container.exec_run(command)
             
         sleep(10)
         
