@@ -14,28 +14,26 @@ class MongoBench:
     def firstQuery(self):
         start = cronometer()
 
-        res = self.db.claims.aggregate(
+        self.db.claims.aggregate(
             [
                 {"$match": {"closed_date": {"$exists": True}}},
                 {"$project": {"customer": 0, "lawyer": 0, "evaluator": 0}}
             ],
             allowDiskUse=True
         )
-        
-        res = list(res)
             
         return cronometer() - start
 
     def secondQuery(self):
         start = cronometer()
-        res = self.db.claims.aggregate(
+        self.db.claims.aggregate(
             [
-                {"$project": {"lawyer": 0, "evaluator": 0}},
                 {
                     "$match": {
                         "closed_date": {"$exists": False}
                     }
                 },
+                {"$project": {"lawyer": 0, "evaluator": 0}},
                 {
                     "$lookup": {
                         "from": "customers",
@@ -48,8 +46,6 @@ class MongoBench:
             allowDiskUse=True
         )
         
-        res = list(res)
-        
         return cronometer() - start
 
     def fourthQuery(self):
@@ -58,7 +54,7 @@ class MongoBench:
         
         start = cronometer()
 
-        res = self.db.claims.aggregate(
+        self.db.claims.aggregate(
             [
                 {
                     "$match": {
@@ -79,14 +75,13 @@ class MongoBench:
             ],
             allowDiskUse=True
         )
-        res = list(res)
 
         return cronometer() - start
 
     def thirdQuery(self):
         start = cronometer()
 
-        res = self.db.customers.aggregate(
+        self.db.customers.aggregate(
             [
                 {
                     "$facet": {
@@ -129,8 +124,6 @@ class MongoBench:
             allowDiskUse=True
         )
         
-        res = list(res)
-
         return cronometer() - start
 
     def benchmark(self, percentage):

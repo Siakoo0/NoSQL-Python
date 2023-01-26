@@ -13,8 +13,7 @@ class Neo4J:
         with Neo4J.driver.session() as s:
             res = s.run(query=query)
             if resultBoolean:
-                return res.data()
-            else: return res
+                return list(res)
     
     @staticmethod
     def empty():
