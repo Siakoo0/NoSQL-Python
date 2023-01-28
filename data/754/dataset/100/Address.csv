@@ -1,0 +1,91 @@
+:ID;:LABEL;country;city;street;zip_code
+1;Address;Italy;Pistoia;Viale Vittoria, 43;33048
+6;Address;Italy;Rovigo;Contrada Tamburi, 23 Piano 4;08032
+11;Address;Italy;Ragusa;Vicolo Gabba, 95 Appartamento 9;00044
+16;Address;Italy;Bolzano;Strada Ruggiero, 986;84099
+21;Address;Italy;Medio Campidano;Incrocio Amalia, 3;89058
+26;Address;Italy;Pescara;Canale Leone, 89 Piano 9;12051
+31;Address;Italy;Lecce;Stretto Gozzano, 35 Appartamento 5;83049
+36;Address;Italy;Torino;Borgo Casaleggio, 180;19122
+41;Address;Italy;Ascoli Piceno;Borgo Mirco, 84;97018
+46;Address;Italy;Massa-Carrara;Via Rosaria, 72 Piano 3;37042
+51;Address;Italy;Bolzano;Rotonda Fedele, 33 Appartamento 9;46039
+56;Address;Italy;Messina;Viale Fanucci, 65;00034
+61;Address;Italy;Alessandria;Piazza Draghi, 30;07025
+66;Address;Italy;Lucca;Via Ernesto, 70;10043
+71;Address;Italy;Potenza;Via Telesio, 66 Piano 8;08047
+76;Address;Italy;Catanzaro;Borgo Giuliana, 9;56036
+81;Address;Italy;Monza e della Brianza;Strada Pizzetti, 126;41012
+86;Address;Italy;Treviso;Vicolo Castioni, 35 Appartamento 9;30015
+91;Address;Italy;Treviso;Canale Giorgio, 291;39015
+96;Address;Italy;Isernia;Canale Ludovico, 860 Piano 4;08046
+101;Address;Italy;Campobasso;Rotonda Ramona, 739 Appartamento 50;45100
+106;Address;Italy;Cuneo;Rotonda Guariento, 2 Piano 6;95122
+111;Address;Italy;Roma;Stretto Musatti, 43 Appartamento 20;58011
+116;Address;Italy;Isernia;Viale Biagi, 692;34011
+121;Address;Italy;Frosinone;Piazza Pinamonte, 89;05028
+126;Address;Italy;Campobasso;Rotonda Fulvio, 40;60126
+131;Address;Italy;Siracusa;Viale Fabrizi, 576 Appartamento 85;36076
+136;Address;Italy;Trento;Rotonda Rismondo, 34;81034
+141;Address;Italy;Medio Campidano;Vicolo Bossi, 9 Piano 1;16127
+146;Address;Italy;Venezia;Borgo Benvenuto, 1 Piano 8;08039
+151;Address;Italy;Ancona;Strada Paoletta, 27 Appartamento 4;85021
+156;Address;Italy;Ancona;Incrocio Antonucci, 9;18033
+161;Address;Italy;Agrigento;Vicolo Fabio, 30 Appartamento 38;86083
+166;Address;Italy;Ancona;Via Antonello, 9 Appartamento 97;83054
+171;Address;Italy;Belluno;Via Argan, 0;39048
+176;Address;Italy;Vercelli;Via Scotti, 670 Appartamento 48;13814
+181;Address;Italy;Ancona;Via Angelina, 84 Piano 0;85022
+186;Address;Italy;Cagliari;Stretto Luisa, 297;84083
+191;Address;Italy;Grosseto;Piazza Carolina, 40 Piano 3;09077
+196;Address;Italy;La Spezia;Incrocio Sagese, 9;27044
+201;Address;Italy;Reggio Calabria;Contrada Ramazzotti, 1;85020
+206;Address;Italy;Verbano-Cusio-Ossola;Canale Leone, 632;38045
+211;Address;Italy;Lodi;Vicolo Cavalcanti, 54 Appartamento 17;23030
+216;Address;Italy;Monza e della Brianza;Viale Gualandi, 729 Appartamento 9;46035
+221;Address;Italy;Prato;Incrocio Brichese, 6 Appartamento 48;60122
+226;Address;Italy;Catania;Viale Fanucci, 6;00172
+231;Address;Italy;Lecce;Incrocio Bonino, 4;98136
+236;Address;Italy;Como;Strada Taccola, 46 Piano 8;71024
+241;Address;Italy;Biella;Viale Ippazio, 52;22021
+246;Address;Italy;Caltanissetta;Piazza Monica, 91 Appartamento 7;23889
+251;Address;Italy;Udine;Stretto Paride, 4;67043
+256;Address;Italy;Matera;Vicolo Mannoia, 66;06046
+261;Address;Italy;Chieti;Via Sagredo, 5 Piano 4;82034
+266;Address;Italy;Enna;Stretto Venancio, 84;20824
+271;Address;Italy;Teramo;Viale Letizia, 16 Piano 9;26854
+276;Address;Italy;Bolzano;Stretto Susanna, 113;63072
+281;Address;Italy;Cuneo;Strada Panatta, 887;10078
+286;Address;Italy;La Spezia;Strada Livio, 3 Piano 3;74010
+291;Address;Italy;Brindisi;Stretto Novaro, 99 Appartamento 2;00059
+296;Address;Italy;Sondrio;Contrada Bertoni, 96 Appartamento 1;09088
+301;Address;Italy;Fermo;Stretto Nicoletta, 6 Piano 2;34149
+306;Address;Italy;Medio Campidano;Contrada Delfino, 63 Piano 8;14041
+311;Address;Italy;Grosseto;Rotonda Federica, 9 Piano 7;24010
+316;Address;Italy;Milano;Piazza Cianciolo, 4 Appartamento 7;73035
+321;Address;Italy;Lodi;Incrocio Lodovico, 46 Appartamento 8;92026
+326;Address;Italy;Piacenza;Rotonda Griselda, 973;89060
+331;Address;Italy;Potenza;Via Maurilio, 82;64018
+336;Address;Italy;Gorizia;Via Marcantonio, 84;56025
+341;Address;Italy;Trapani;Strada Filippelli, 23;74100
+346;Address;Italy;Brescia;Rotonda Volterra, 25 Appartamento 45;13885
+351;Address;Italy;Roma;Piazza Bruscantini, 3;60124
+356;Address;Italy;Caserta;Canale Ciro, 32 Appartamento 0;63845
+361;Address;Italy;Viterbo;Viale Cafarchia, 89;07022
+366;Address;Italy;Bergamo;Rotonda Loretta, 594;02010
+371;Address;Italy;Treviso;Contrada Nedda, 464;71010
+376;Address;Italy;Cosenza;Viale Elmo, 5 Appartamento 53;73048
+381;Address;Italy;Perugia;Via Fabia, 7 Piano 6;86018
+386;Address;Italy;Pordenone;Stretto Alfredo, 56 Appartamento 49;67028
+391;Address;Italy;Parma;Incrocio Melania, 57 Piano 1;19012
+396;Address;Italy;Potenza;Via Guarneri, 99;87040
+401;Address;Italy;Nuoro;Piazza Bernardi, 65;13864
+403;Address;Italy;Pordenone;Borgo Troisi, 80 Appartamento 2;45026
+405;Address;Italy;Parma;Rotonda Boezio, 690 Appartamento 0;55019
+407;Address;Italy;Treviso;Incrocio Annamaria, 20 Piano 0;73026
+409;Address;Italy;Livorno;Incrocio Bignardi, 16 Piano 5;35047
+411;Address;Italy;Ancona;Incrocio Maria, 250;37122
+413;Address;Italy;Avellino;Via Broschi, 776 Appartamento 30;34142
+415;Address;Italy;Monza e della Brianza;Incrocio Mariano, 52 Appartamento 39;63839
+417;Address;Italy;Prato;Rotonda Schiaparelli, 832 Appartamento 8;08036
+419;Address;Italy;Treviso;Borgo Licia, 29;45035

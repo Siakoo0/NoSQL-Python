@@ -9,7 +9,11 @@ from source.tools.Logger import Logger
 class MongoWriter:
     def __convert(self, entity: Entity, collectionMap):
         document = entity.getAttributes().copy()
-        document["_id"] = entity.getMeta("MongoID") if entity.hasMeta("MongoID") else ObjectId()
+        
+        if entity.hasMeta("MongoID") :
+            document["_id"] = entity.getMeta("MongoID") 
+        else:
+            document["_id"] = ObjectId()
 
         relationships = entity.getRelationships()
 

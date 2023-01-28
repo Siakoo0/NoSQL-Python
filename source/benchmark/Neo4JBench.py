@@ -16,32 +16,29 @@ class Neo4JBench:
 
     def benchmark(self, percentage):
         connection = Neo4J.driver
+        formatDate = '%Y-%m-%dT%H:%M:%S.%f%z'
         
         results = []
         
-        formatDate = '%Y-%m-%dT%H:%M:%S.%f%z'
-
-        dateStart = datetime.now() - timedelta(days=15)
-        dateStart = dateStart.strftime(formatDate)
-        dateEnd = datetime.now() + timedelta(days=15)
-        dateEnd = dateEnd.strftime(formatDate)
-
         Neo4J.clearCache()
+        
+        dateStart = datetime.now() - timedelta(days=45)
+        dateStart = dateStart.strftime(formatDate)
+        dateEnd = datetime.now() + timedelta(days=45)
+        dateEnd = dateEnd.strftime(formatDate)
+        
+        queries = [
+            self.firstQuery(), 
+            self.secondQuery(), 
+            self.thirdQuery(), 
+            self.fourthQuery(dateStart, dateEnd)
+        ]
         
         Logger.log(f"Inizio benchmark Neo4J percentuale {percentage}%.")
         
         for _ in range(31):
-            dateStart = datetime.now() - timedelta(days=randint(15,45))
-            dateStart = dateStart.strftime(formatDate)
-            dateEnd = datetime.now() + timedelta(days=randint(15,45))
-            dateEnd = dateEnd.strftime(formatDate)
-            queries = [
-                self.firstQuery(), 
-                self.secondQuery(), 
-                self.thirdQuery(), 
-                self.fourthQuery(dateStart, dateEnd)
-            ]
             resultRow = []
+            
             for query in queries:
                 with connection.session() as session:
                     start = cronometer()
@@ -54,22 +51,22 @@ class Neo4JBench:
         
         Logger.log(f"Scrittura risultati Neo4J percentuale {percentage}%.")
 
-    def firstQuery(self) -> int:
+    def firstQuery(self) -> str:
         return   """MATCH (n:Claim)
                     WHERE n.closed_date IS NOT NULL
                     RETURN *"""
             
-    def secondQuery(self) -> int:
+    def secondQuery(self) -> str:
         return  """MATCH (customer:Customer)-[:OPEN]-(claim:Claim)
                    WHERE claim.closed_date IS NULL
                    RETURN *"""
         
-    def thirdQuery(self):
-        return   """MATCH (a:Customer)-[:HAS_PHONE|HAS_SSN|HAS_EMAIL]-(m)-[:HAS_PHONE|HAS_SSN|HAS_EMAIL]-(b:Customer) 
+    def thirdQuery(self) -> str:
+        return """MATCH (a:Customer)-[:HAS_PHONE|HAS_SSN|HAS_EMAIL]-(m)-[:HAS_PHONE|HAS_SSN|HAS_EMAIL]-(b:Customer) 
                   RETURN *"""
 
     
-    def fourthQuery(self, dateStart, dateEnd):
+    def fourthQuery(self, dateStart, dateEnd) -> str:
         return  f"""MATCH (c:Customer)-[:OPEN]-(claim:Claim)
                     MATCH (claim)-[:DEALS_WITH]-(l:Lawyer)
                     MATCH (claim)-[:CHECKS]-(e:Evaluator)

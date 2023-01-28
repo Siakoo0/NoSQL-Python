@@ -1,0 +1,59 @@
+:ID;:LABEL;type;open_date:datetime
+431;Claim;Furto Auto;2022-12-08T00:48:24.951894
+434;Claim;Incidente Auto;2022-02-24T00:48:23.951894
+443;Claim;Furto Auto;2022-12-05T00:47:11.952893
+446;Claim;Furto in Casa;2022-12-10T00:46:21.952893
+449;Claim;Incidente Auto;2022-04-16T00:49:02.952893
+455;Claim;Incidente Auto;2022-02-15T00:45:02.954944
+461;Claim;Furto in Casa;2022-11-18T00:48:15.954944
+464;Claim;Incidente Auto;2022-04-23T00:46:52.954944
+467;Claim;Incendio doloso Auto;2022-12-15T00:46:57.955946
+470;Claim;Incendio doloso Casa;2022-04-04T00:43:24.955946
+473;Claim;Incidente Auto;2022-09-11T00:47:39.955946
+476;Claim;Incidente Auto;2022-11-30T00:45:25.955946
+497;Claim;Incendio doloso Auto;2022-08-19T00:43:48.956944
+503;Claim;Furto Auto;2022-09-04T00:46:45.956944
+533;Claim;Incendio doloso Casa;2022-03-03T00:45:44.959946
+536;Claim;Furto in Casa;2022-07-26T00:44:47.959946
+542;Claim;Furto Auto;2022-12-10T00:48:58.959946
+545;Claim;Furto Auto;2022-03-21T00:46:11.959946
+551;Claim;Incendio doloso Auto;2022-09-11T00:46:51.959946
+554;Claim;Incendio doloso Auto;2022-03-28T00:48:30.959946
+563;Claim;Incendio doloso Auto;2022-04-23T00:46:40.960945
+566;Claim;Furto Auto;2022-05-14T00:48:40.960945
+569;Claim;Furto Auto;2023-01-27T00:45:30.961944
+581;Claim;Furto in Casa;2022-02-20T00:46:49.961944
+584;Claim;Incidente Auto;2022-12-16T00:48:16.961944
+590;Claim;Incendio doloso Auto;2022-12-31T00:47:00.962944
+593;Claim;Furto in Casa;2023-01-06T00:47:39.962944
+596;Claim;Incidente Auto;2022-10-27T00:46:26.962944
+605;Claim;Incendio doloso Casa;2022-05-22T00:43:33.962944
+611;Claim;Furto Auto;2022-06-07T00:44:47.962944
+614;Claim;Furto in Casa;2022-01-30T00:47:00.962944
+620;Claim;Incidente Auto;2022-03-28T00:45:29.964547
+632;Claim;Incendio doloso Casa;2022-04-21T00:43:24.964547
+641;Claim;Furto Auto;2022-03-02T00:46:45.964547
+647;Claim;Incendio doloso Auto;2022-02-25T00:43:54.964547
+653;Claim;Furto Auto;2022-03-17T00:48:01.964547
+656;Claim;Incendio doloso Auto;2022-03-31T00:46:56.964547
+662;Claim;Incendio doloso Auto;2022-06-01T00:44:04.964547
+668;Claim;Furto in Casa;2022-05-29T00:45:29.964547
+677;Claim;Incendio doloso Casa;2022-06-30T00:44:45.964547
+692;Claim;Incendio doloso Casa;2022-11-28T00:47:34.965553
+701;Claim;Incendio doloso Auto;2022-11-18T00:45:34.965553
+704;Claim;Incendio doloso Auto;2022-12-04T00:43:36.965553
+707;Claim;Incendio doloso Auto;2022-07-06T00:49:12.965553
+710;Claim;Incendio doloso Casa;2023-01-02T00:47:31.965553
+713;Claim;Furto Auto;2022-09-07T00:43:38.965553
+715;Claim;Incendio doloso Auto;2022-03-18T00:48:59.965553
+717;Claim;Furto Auto;2022-10-01T00:47:04.965553
+719;Claim;Furto Auto;2022-07-05T00:44:02.965553
+721;Claim;Incendio doloso Auto;2023-01-21T00:46:43.965553
+725;Claim;Furto in Casa;2022-03-05T00:48:46.965553
+735;Claim;Furto Auto;2022-05-17T00:46:06.966554
+737;Claim;Incendio doloso Casa;2022-03-06T00:46:06.966554
+740;Claim;Incidente Auto;2022-07-14T00:46:38.966554
+741;Claim;Incendio doloso Casa;2023-01-09T00:44:39.966554
+743;Claim;Incendio doloso Auto;2022-03-12T00:47:27.966554
+747;Claim;Incidente Auto;2022-11-29T00:44:56.966554
+748;Claim;Furto Auto;2022-05-19T00:46:17.966554

@@ -49,8 +49,8 @@ class MongoBench:
         return cronometer() - start
 
     def fourthQuery(self):
-        dateStart = datetime.now() - timedelta(days=15)
-        dateEnd = datetime.now() + timedelta(days=15)
+        dateStart = datetime.now() - timedelta(days=45)
+        dateEnd = datetime.now() + timedelta(days=45)
         
         start = cronometer()
 

@@ -1,0 +1,5 @@
+:ID;:LABEL;type;open_date:datetime;closed_date:datetime
+42;Claim;Incidente Auto;2022-08-16T12:30:35.355668;2022-08-21T12:35:46.355668
+51;Claim;Incendio doloso Casa;2023-01-24T12:27:42.357663;2023-01-29T12:33:50.357663
+57;Claim;Incendio doloso Auto;2022-05-10T12:31:37.359664;2022-05-15T12:41:21.359664
+66;Claim;Incidente Auto;2022-04-17T12:26:42.359664;2022-04-22T12:34:28.359664

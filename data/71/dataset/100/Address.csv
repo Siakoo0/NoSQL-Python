@@ -1,0 +1,10 @@
+:ID;:LABEL;country;city;street;zip_code
+1;Address;Italy;Treviso;Via Altera, 8 Piano 2;62020
+6;Address;Italy;Frosinone;Canale Moneta, 8 Appartamento 65;28819
+11;Address;Italy;Salerno;Rotonda Armellini, 552 Appartamento 40;24056
+16;Address;Italy;Bolzano;Vicolo Ruggiero, 888 Appartamento 66;85030
+21;Address;Italy;Firenze;Vicolo Sole, 30;27012
+26;Address;Italy;Catania;Vicolo Simeoni, 9 Appartamento 6;62020
+31;Address;Italy;Latina;Canale Rosiello, 68 Appartamento 4;28894
+36;Address;Italy;Pisa;Vicolo Tafuri, 61;20031
+40;Address;Italy;Venezia;Incrocio Sonia, 693 Piano 9;12064
