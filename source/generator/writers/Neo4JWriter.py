@@ -23,18 +23,22 @@ class Neo4JWriter:
     
     @staticmethod
     def convert(entity : Entity):
-        attributes = entity.getAttributes()
+        attrs = dict(entity.getAttributes())
+        attributes = {}
         
-        dateTimeChg = []
+        dataTypeMapping = {
+            datetime : ":datetime",
+            int : ":int",
+            str : ""
+        }
         
-        for name, attribute in attributes.items():
+        
+        for name, attribute in attrs.items():
+            dataType = dataTypeMapping[type(attribute)]
+            attributes[f"{name}{dataType}"] = attribute
+            
             if isinstance(attribute, datetime):
-                attributes[name] = attribute.strftime('%Y-%m-%dT%H:%M:%S.%f%Z')
-                dateTimeChg.append(name)
-        
-        for name in dateTimeChg:
-            attributes[name + ":datetime"] = attributes[name]
-            del attributes[name]
+               attributes[f"{name}{dataType}"] = attribute.strftime('%Y-%m-%dT%H:%M:%S.%f%Z')
         
         uniqueID = Neo4JWriter.getUniqueID()
         
@@ -149,21 +153,3 @@ class Neo4JWriter:
         
         Neo4J.resetConnection()
         
-
-# neo4j-admin database import full --delimiter=";" --array-delimiter="|" --overwrite-destination \
-# --nodes /import/Address.csv  \
-# --nodes /import/Claim$1.csv  \
-# --nodes /import/Claim.csv \
-# --nodes /import/Customer.csv  \
-# --nodes /import/Email.csv \
-# --nodes /import/Evaluator.csv  \
-# --nodes /import/Lawyer.csv  \
-# --nodes /import/Phone.csv  \
-# --nodes /import/SSN.csv  \
-# --relationships  /import/Claim_Customer.csv  \
-# --relationships  /import/Claim_Evaluator.csv  \
-# --relationships  /import/Claim_Lawyer.csv  \
-# --relationships  /import/Customer_Address.csv  \
-# --relationships  /import/Customer_Email.csv  \
-# --relationships  /import/Customer_Phone.csv \
-# --relationships  /import/Customer_SSN.csv
